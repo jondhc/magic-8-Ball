@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
    
     //MARK: Values
     let answers : [String] =
@@ -47,10 +47,16 @@ class ViewController: UIViewController {
         var tapGestureRecognizer : UITapGestureRecognizer
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.questionTextField.delegate = self;
         tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
         view.addGestureRecognizer(tapGestureRecognizer)
     }//end viewDidLoad
-
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }//end textFieldShouldReturn
+    
     //MARK: Actions
     @IBAction func askButton(_ sender: UIButton) {
         let answerNo = Int(arc4random_uniform(19))
@@ -58,5 +64,5 @@ class ViewController: UIViewController {
         questionTextField.text="";
     }//end askButton
     
-}   //end ViewController
+}//end ViewController
 
