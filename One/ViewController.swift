@@ -36,6 +36,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     //MARK: Properties
     @IBOutlet weak var mainLabel: UILabel!
     @IBOutlet weak var questionTextField: UITextField!
+    @IBOutlet weak var answerLabel: UILabel!
     
     
     @objc func dismissKeyboard()
@@ -47,6 +48,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         var tapGestureRecognizer : UITapGestureRecognizer
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        answerLabel.text=""
+        questionTextField.text=""
         self.questionTextField.delegate = self;
         tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
         view.addGestureRecognizer(tapGestureRecognizer)
@@ -60,7 +63,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     //MARK: Actions
     @IBAction func askButton(_ sender: UIButton) {
         let answerNo = Int(arc4random_uniform(19))
-        mainLabel.text=answers[answerNo]
+        answerLabel.text=answers[answerNo]
         questionTextField.text="";
     }//end askButton
     
