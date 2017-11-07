@@ -5,13 +5,13 @@
 //  Created by Jonathan Daniel on 11/6/17.
 //  Copyright © 2017 Jonathan Herrejón. All rights reserved.
 //
-
+//  Responds to state transitions
 import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
+    var window: UIWindow?   //Optional. It may have no value at a given moment.
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
