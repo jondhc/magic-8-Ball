@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		090991DE1FBAC5260051AD62 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090991DD1FBAC5260051AD62 /* Model.swift */; };
 		09DA46301FB16FB60060D3E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DA462F1FB16FB60060D3E2 /* AppDelegate.swift */; };
 		09DA46321FB16FB60060D3E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DA46311FB16FB60060D3E2 /* ViewController.swift */; };
 		09DA46351FB16FB60060D3E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09DA46331FB16FB60060D3E2 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		090991DD1FBAC5260051AD62 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		09DA462C1FB16FB60060D3E2 /* One.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = One.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09DA462F1FB16FB60060D3E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09DA46311FB16FB60060D3E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				09DA462F1FB16FB60060D3E2 /* AppDelegate.swift */,
 				09DA46311FB16FB60060D3E2 /* ViewController.swift */,
+				090991DD1FBAC5260051AD62 /* Model.swift */,
 				09DA46331FB16FB60060D3E2 /* Main.storyboard */,
 				09DA46361FB16FB60060D3E2 /* Assets.xcassets */,
 				09DA46381FB16FB60060D3E2 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				090991DE1FBAC5260051AD62 /* Model.swift in Sources */,
 				09DA46321FB16FB60060D3E2 /* ViewController.swift in Sources */,
 				09DA46301FB16FB60060D3E2 /* AppDelegate.swift in Sources */,
 			);
