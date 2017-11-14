@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
    
+    // MODEL
     //MARK: Values
     let answers : [String] =
         ["It is certain",
@@ -32,6 +33,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
          "My sources say no",
          "Outlook not so good",
          "Very doubtful"]
+    
+    
+    //////////////////////////
+    
+    
+    
     
     //MARK: Properties
     @IBOutlet weak var mainLabel: UILabel!
@@ -65,6 +72,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let answerNo = Int(arc4random_uniform(19))
         answerLabel.text=answers[answerNo]
         questionTextField.text="";
+        view.endEditing(true)
     }//end askButton
     
 }//end ViewController
